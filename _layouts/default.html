@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    {% include head.html %}
+  </head>
+  <body data-rsssl="1" class="home page-template page-template-page-{{ page.path | remove: ".html" }} page">
+    <div id="page" class="site container">
+      {% include header.html %}
+
+      <div id="content" class="site-content">
+        <section id="primary" class="content-area">
+          <main id="main" class="site-main">{{ content }}</main>
+        </section>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,37 @@
+---
+layout: default
+title: Bespoke
+excerpt: If you like my style and would like something a little more unique, we can work together to create a completely bespoke suite that reflects your own style.
+---
+
+<div class="the-content">
+  <h1 class="the-title text-center">{{ page.title }}</h1>
+
+  <p style="text-align: center">
+    If you like my style and would like something a little more unique, we can
+    work together to create a completely bespoke suite that reflects your own
+    style.<br /><br />Please get in touch to discuss your ideas<br />
+  </p>
+
+  <hr class="wp-block-separator" />
+
+  <p style="text-align: center">EXAMPLES</p>
+
+  <p style="text-align: center">Here are a few examples of bespoke suites</p>
+</div>
+
+<div class="row bespoke-items">
+  {% for bespoke in site.bespoke %}
+  <div class="col-12 col-md-6 item">
+    <a href="{{ bespoke.url }}" title="{{ bespoke.title }}">
+      <span
+        class="item-inner"
+        style="background-image: url({{ bespoke.image }});"
+      >
+        <img src="{{ bespoke.image }}" alt="{{ bespoke.title }}" />
+      </span>
+      <span class="post-title">{{ bespoke.title }}</span>
+    </a>
+  </div>
+  {% endfor %}
+</div>

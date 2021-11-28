@@ -7624,6 +7624,7 @@ a.text-dark:focus {
     url(/assets/font/Athelas-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "NordicaHairline";
@@ -7631,6 +7632,7 @@ a.text-dark:focus {
     url(/assets/font/NordicaHairline.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "NordicaThin";
@@ -7638,6 +7640,7 @@ a.text-dark:focus {
     url(/assets/font/NordicaThin.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 body {
   color: #6e6f71;
